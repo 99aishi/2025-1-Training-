@@ -50,11 +50,41 @@ void encola(void *dato,void *cola,int prio){
     }
 
 }
-
-void insertar_prioridad(void** arr_cola,void **nuevo_nodo, int prio){
-    arr_cola[1];
-    if(prio==3){
-        if(arr_cola[3]==nullptr){
+void insertar1(void **arr_cola,void **nuevo_nodo,int prio){
+    if(arr_cola[prio]==nullptr){
+            void**anterior=(void**)arr_cola[0];
+            nuevo_nodo[SIGUIENTE]=anterior;
+            arr_cola[0]=nuevo_nodo;
+            arr_cola[prio]=nuevo_nodo;
+        }else{
+            void **ultimo_nodo=(void**)arr_cola[prio];
+            nuevo_nodo[SIGUIENTE]=ultimo_nodo[SIGUIENTE];
+            ultimo_nodo[SIGUIENTE]=nuevo_nodo;
+            arr_cola[prio]=nuevo_nodo;
+        }
+}
+void insertar2(void** arr_cola,void **nuevo_nodo, int prio){
+    if(arr_cola[prio]==nullptr){
+        if(arr_cola[prio-1]!=nullptr){
+            void **anterior=(void**)arr_cola[prio-1];
+            nuevo_nodo[SIGUIENTE]=anterior[SIGUIENTE];
+            anterior[SIGUIENTE]=nuevo_nodo;            
+            arr_cola[prio]=nuevo_nodo;
+        }else{
+            void **anterior=(void**)arr_cola[0];
+            nuevo_nodo[SIGUIENTE]=anterior;
+            arr_cola[prio]=nuevo_nodo; 
+            arr_cola[0]=nuevo_nodo;
+        }             
+    }else{
+        void **ultimo_nodo=(void**)arr_cola[prio]; //0x917088
+        nuevo_nodo[SIGUIENTE]=ultimo_nodo[SIGUIENTE];
+        ultimo_nodo[SIGUIENTE]=nuevo_nodo;
+        arr_cola[prio]=nuevo_nodo;//0x917520
+    }
+}
+void insertar3(void **arr_cola,void **nuevo_nodo,int prio){
+            if(arr_cola[3]==nullptr){
             void **ultimo_nodo=(void**)arr_cola[2];
             nuevo_nodo[SIGUIENTE]=nullptr;
             ultimo_nodo[SIGUIENTE]=nuevo_nodo;
@@ -67,45 +97,14 @@ void insertar_prioridad(void** arr_cola,void **nuevo_nodo, int prio){
             arr_cola[prio]=nuevo_nodo;
             arr_cola[4]=nuevo_nodo;
         }
-            
-    }
-    if(prio==2){
-        if(arr_cola[prio]==nullptr){
-            void **anterior;
-            if(arr_cola[prio-1]!=nullptr){
-                anterior=(void**)arr_cola[prio-1];
-                nuevo_nodo[SIGUIENTE]=anterior[SIGUIENTE];
-                anterior[SIGUIENTE]=nuevo_nodo;            
-                arr_cola[prio]=nuevo_nodo;
-            }else{
-                anterior=(void**)arr_cola[0];
-                nuevo_nodo[SIGUIENTE]=anterior;
-                arr_cola[prio]=nuevo_nodo; 
-                arr_cola[0]=nuevo_nodo;
-            }               
-            
-        }else{
-            void **ultimo_nodo=(void**)arr_cola[prio]; //0x917088
-            nuevo_nodo[SIGUIENTE]=ultimo_nodo[SIGUIENTE];
-            ultimo_nodo[SIGUIENTE]=nuevo_nodo;
-            arr_cola[prio]=nuevo_nodo;//0x917520
-        }
-       
-    }
-    if(prio==1){
-        if(arr_cola[prio]==nullptr){
-            void**anterior=(void**)arr_cola[0];
-            nuevo_nodo[SIGUIENTE]=anterior;
-            arr_cola[0]=nuevo_nodo;
-            arr_cola[prio]=nuevo_nodo;
-        }else{
-            void **ultimo_nodo=(void**)arr_cola[prio];
-            nuevo_nodo[SIGUIENTE]=ultimo_nodo[SIGUIENTE];
-            ultimo_nodo[SIGUIENTE]=nuevo_nodo;
-            arr_cola[prio]=nuevo_nodo;
-        }
-       
-    }
+}
+void insertar_prioridad(void** arr_cola,void **nuevo_nodo, int prio){
+    if(prio==3)
+        insertar3(arr_cola,nuevo_nodo,prio);
+    if(prio==2)
+        insertar2(arr_cola,nuevo_nodo,prio);
+    if(prio==1)
+        insertar1(arr_cola,nuevo_nodo,prio);
 }
 bool esColaVacia(void *cola){
     void** arr_cola=(void**)cola;

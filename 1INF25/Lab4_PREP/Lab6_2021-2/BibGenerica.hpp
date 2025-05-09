@@ -22,4 +22,8 @@ void descargarcola(void *&cola,void(*muestranumero)(void*,ofstream&),const char 
 void encola(void *dato,void *cola,int prio);
 void insertar_prioridad(void** arr_cola,void **elemento, int prio);
 void imprimirped(void *cola,const char *nom);
+
+void insertar1(void **arr_cola,void **nuevo_nodo,int prio);
+void insertar2(void** arr_cola,void **nuevo_nodo, int prio);
+void insertar3(void **arr_cola,void **nuevo_nodo,int prio);
 #endif /* BIBGENERICA_HPP */
