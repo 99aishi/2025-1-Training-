@@ -18,8 +18,8 @@
 #include <iomanip>
 #include <cstring>
 using namespace std;
-enum COLA{INICIO,PRIMERA,SEGUNDA,TERCERA,FIN};
-enum NODO{DATO,PTR};
+//enum COLA{INICIO,FIN};
+enum NODO{DATO,SIGUIENTE};
 enum CLIENTE{CODIGO,TIPO,LIBRO,NOMBRE};
 #endif /* UTILS_HPP */
 

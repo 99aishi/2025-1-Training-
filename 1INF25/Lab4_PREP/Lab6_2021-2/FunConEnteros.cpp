@@ -23,98 +23,16 @@ void* leenumero(ifstream &input){
     registro[0]=ptr_num;
     return registro;    
 }
-void prioridadnumero(void* cola,void* elemento){
-    void **arr_cola=(void**)cola;
-    void **nuevo_nodo=new void*[2];
-    nuevo_nodo[DATO]=elemento;
-    nuevo_nodo[PTR]=nullptr;
-    void**reg=(void**)elemento;
+int prioridadnumero(void* elemento){
+    void **reg=(void**)elemento;
     int *num=(int*)reg[0];
-    if(esColaVacia(cola)){
-        arr_cola[INICIO]=nuevo_nodo;
-        arr_cola[FIN]=nuevo_nodo;
-//        arr_cola[TERCERA]=nuevo_nodo;
-//        arr_cola[SEGUNDA]=nuevo_nodo;
-//        arr_cola[PRIMERA]=nuevo_nodo;
-        if(*num<50)
-            arr_cola[TERCERA]=nuevo_nodo;
-        else if(*num>=50 and *num<=100)
-            arr_cola[SEGUNDA]=nuevo_nodo;
-        else if(*num>100)
-            arr_cola[PRIMERA]=nuevo_nodo;
-    }else{
-        insertar_prioridad(cola,elemento);
-    }
-
+    if(*num<50) return 3;
+    if(*num>50 and *num<=100) return 2;
+    if(*num>100) return 1;
     
 }
-void insertar_prioridad(void* cola,void *elemento){
-    void**arr_cola=(void**)cola;
-    void **nuevo_nodo=new void*[2];
-    nuevo_nodo[DATO]=elemento;
-    nuevo_nodo[PTR]=nullptr;    
-    void**reg=(void**)elemento;
-    int *numero=(int*)reg[0];
-    if(*numero<50){
-        if(arr_cola[TERCERA]==nullptr){
-            void **anterior=(void**)arr_cola[TERCERA];
-            nuevo_nodo[PTR]=(void**)anterior[PTR];
-            anterior[PTR]=(void**)nuevo_nodo;
-            arr_cola[TERCERA]=nuevo_nodo;
-        }else{
-            void **ultimo_nodo=(void**)arr_cola[TERCERA];
-            nuevo_nodo[PTR]=(void**)ultimo_nodo[PTR];
-            ultimo_nodo[PTR]=(void**)nuevo_nodo;
-            arr_cola[TERCERA]=nuevo_nodo; 
-            arr_cola[FIN]=nuevo_nodo; 
-        }
-       
-    }
-    if(*numero>=50 and *numero<=100){
-        if(arr_cola[SEGUNDA]==nullptr){
-            void **anterior;
-            if(arr_cola[PRIMERA]!=nullptr){
-                anterior=(void**)arr_cola[PRIMERA];
-                nuevo_nodo[PTR]=(void**)anterior[PTR];
-                anterior[PTR]=(void**)nuevo_nodo;            
-                arr_cola[SEGUNDA]=nuevo_nodo;
-            }
-            else{
-                anterior=(void**)arr_cola[INICIO];
-                nuevo_nodo[PTR]=(void**)anterior[PTR];
-                anterior[PTR]=(void**)nuevo_nodo;            
-                arr_cola[SEGUNDA]=nuevo_nodo;
-                arr_cola[INICIO]=nuevo_nodo;
-            }                
-            
-        }else{
-            void **ultimo_nodo=(void**)arr_cola[SEGUNDA];
-            nuevo_nodo[PTR]=(void**)ultimo_nodo[PTR];
-            ultimo_nodo[PTR]=(void**)nuevo_nodo;
-            arr_cola[SEGUNDA]=nuevo_nodo;
-        }
-       
-    }
-    if(*numero>100){
-        if(arr_cola[PRIMERA]==nullptr){
-            void**anterior=(void**)arr_cola[INICIO];
-            nuevo_nodo[PTR]=(void**)anterior;
-            arr_cola[INICIO]=nuevo_nodo;
-            arr_cola[PRIMERA]=nuevo_nodo; //PRIMERA PTR APUNTA A NADA CUANDO DEBERIA APUNTAR AL VALOR PROXIMO
-            
-        }else{
-            void **ultimo_nodo=(void**)arr_cola[PRIMERA];
-            nuevo_nodo[PTR]=(void**)ultimo_nodo[PTR];
-            ultimo_nodo[PTR]=(void**)nuevo_nodo;
-            arr_cola[PRIMERA]=nuevo_nodo;
-        }
-       
-    }
-}
-bool esColaVacia(void *cola){
-    void** arr_cola=(void**)cola;
-    return arr_cola[INICIO]==nullptr;
-}
+
+
 void muestranumero(void *reg, ofstream &repo){
     void**registro=(void**)reg;
     int *num=(int*)registro[0];

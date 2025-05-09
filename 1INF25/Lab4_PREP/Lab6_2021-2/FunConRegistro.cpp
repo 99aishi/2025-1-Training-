@@ -17,7 +17,8 @@ void* leepedido(ifstream &input){
     input>>codigo;
     if(input.eof()) return nullptr;
     char prio,*nombre,*libro,c;
-    input>>prio>>c;
+    input.get(prio);
+    input>>c;
     libro=leer_cadena(input,8,',');
     nombre=leer_cadena(input,100,'\n');
     int *ptr= new int;
@@ -32,6 +33,16 @@ void* leepedido(ifstream &input){
     return registro;
     
 }
+int prioridadpedido(void *dato){
+    void **registro=(void**)dato;
+    char *tipo=(char*)registro[TIPO];
+    if(*tipo=='A') return 3;
+    if(*tipo=='E') return 2;
+    if(*tipo=='D') return 1;
+    
+    
+    
+}
 char *leer_cadena(ifstream &input,int size,char delim){
     char *cadena,buffer[size];
     input.getline(buffer,size,delim);
@@ -40,96 +51,7 @@ char *leer_cadena(ifstream &input,int size,char delim){
     strcpy(cadena,buffer);
     return cadena;
 }
-void prioridadpedido(void *cola,void* registro){
-    void **arr_cola=(void**)cola;
-    void **nuevo_nodo=new void*[2];
-    nuevo_nodo[DATO]=registro;
-    nuevo_nodo[PTR]=nullptr;
-    
-    void **arr=(void**)registro;
-    char *tipo=(char*)arr[TIPO];
-    if(esColaVacia(cola)){
-        arr_cola[INICIO]=nuevo_nodo;
-        arr_cola[FIN]=nuevo_nodo;
 
-        if(*tipo=='A')
-            arr_cola[TERCERA]=nuevo_nodo;
-        else if(*tipo=='E')
-            arr_cola[SEGUNDA]=nuevo_nodo;
-        else if(*tipo=='D')
-            arr_cola[PRIMERA]=nuevo_nodo;
-    }else{
-        insertar_prioridad_libros(cola,registro);
-    }
-    
-}
-void insertar_prioridad_libros(void* cola,void *elemento){
-    void**arr_cola=(void**)cola;
-    void **nuevo_nodo=new void*[2];
-    nuevo_nodo[DATO]=elemento;
-    nuevo_nodo[PTR]=nullptr;    
-    void**reg=(void**)elemento;
-    char *tipo=(char*)reg[TIPO];
-    if(*tipo=='A'){
-        if(arr_cola[TERCERA]==nullptr){
-            void **anterior=(void**)arr_cola[TERCERA];
-            nuevo_nodo[PTR]=(void**)anterior[PTR];
-            anterior[PTR]=(void**)nuevo_nodo;
-            arr_cola[TERCERA]=nuevo_nodo;
-        }else{
-            void **ultimo_nodo=(void**)arr_cola[TERCERA];
-            nuevo_nodo[PTR]=(void**)ultimo_nodo[PTR];
-            ultimo_nodo[PTR]=(void**)nuevo_nodo;
-            arr_cola[TERCERA]=nuevo_nodo; 
-            arr_cola[FIN]=nuevo_nodo; 
-        }
-       
-    }
-    if(*tipo=='E'){
-        if(arr_cola[SEGUNDA]==nullptr){
-            void **anterior;
-            if(arr_cola[PRIMERA]!=nullptr){
-                anterior=(void**)arr_cola[PRIMERA];
-                nuevo_nodo[PTR]=(void**)anterior[PTR];
-                anterior[PTR]=(void**)nuevo_nodo;            
-                arr_cola[SEGUNDA]=nuevo_nodo;
-            }
-            else{
-                anterior=(void**)arr_cola[INICIO];
-                nuevo_nodo[PTR]=(void**)anterior[PTR];
-                anterior[PTR]=(void**)nuevo_nodo;            
-                arr_cola[SEGUNDA]=nuevo_nodo;
-                arr_cola[INICIO]=nuevo_nodo;
-            }                
-            
-        }else{
-            void **ultimo_nodo=(void**)arr_cola[SEGUNDA];
-            if(ultimo_nodo[PTR]==nullptr){
-                nuevo_nodo[PTR]=(void**)ultimo_nodo;
-            }else{
-                nuevo_nodo[PTR]=(void**)ultimo_nodo[PTR];
-            }            
-            ultimo_nodo[PTR]=(void**)nuevo_nodo;
-            arr_cola[SEGUNDA]=nuevo_nodo;
-        }
-       
-    }
-    if(*tipo=='D'){
-        if(arr_cola[PRIMERA]==nullptr){
-            void**anterior=(void**)arr_cola[INICIO];
-            nuevo_nodo[PTR]=(void**)anterior;
-            arr_cola[INICIO]=nuevo_nodo;
-            arr_cola[PRIMERA]=nuevo_nodo; //PRIMERA PTR APUNTA A NADA CUANDO DEBERIA APUNTAR AL VALOR PROXIMO
-            
-        }else{
-            void **ultimo_nodo=(void**)arr_cola[PRIMERA];
-            nuevo_nodo[PTR]=(void**)ultimo_nodo[PTR];
-            ultimo_nodo[PTR]=(void**)nuevo_nodo;
-            arr_cola[PRIMERA]=nuevo_nodo;
-        }
-       
-    }
-}
 
 
 void muestrapedido(void *reg,ofstream &repo){
@@ -140,6 +62,6 @@ void muestrapedido(void *reg,ofstream &repo){
     char *libro=(char*)arr_registro[LIBRO];
     int *cod=(int*)arr_registro[CODIGO];
     
-    repo <<left<<setw(5)<<tipo<<setw(12) << *cod<<setw(60)<<nombre<<libro<<endl;
+    repo <<left<<setw(5)<<*tipo<<setw(12) << *cod<<setw(60)<<nombre<<libro<<endl;
     
 }

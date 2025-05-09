@@ -14,8 +14,7 @@
 #define FUNCONENTEROS_HPP
 #include "utils.hpp"
 void* leenumero(ifstream &input);
-void prioridadnumero(void* cola,void*elemento);
+int prioridadnumero(void*elemento);
 void insertar_prioridad(void* cola,void *elemento);
-bool esColaVacia(void *cola);
 void muestranumero(void *reg, ofstream &repo);
 #endif /* FUNCONENTEROS_HPP */
