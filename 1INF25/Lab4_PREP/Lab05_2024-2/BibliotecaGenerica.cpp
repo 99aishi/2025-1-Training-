@@ -24,7 +24,6 @@ void crealista(void* &lista,void*(*leenumeros)(ifstream &),const char *nom){
         void *dupla = leenumeros(input);
         if(input.eof()) break;
         insertafinal(dupla,prelista);        
-        cout << i++<<endl;
     }
     
     lista=prelista;
