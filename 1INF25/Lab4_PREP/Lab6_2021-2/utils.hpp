@@ -20,5 +20,6 @@
 using namespace std;
 enum COLA{INICIO,PRIMERA,SEGUNDA,TERCERA,FIN};
 enum NODO{DATO,PTR};
+enum CLIENTE{CODIGO,TIPO,LIBRO,NOMBRE};
 #endif /* UTILS_HPP */
 

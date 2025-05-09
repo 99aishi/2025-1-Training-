@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>BibGenerica.hpp</itemPath>
       <itemPath>FunConEnteros.hpp</itemPath>
+      <itemPath>FunConRegistro.hpp</itemPath>
       <itemPath>utils.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -17,6 +18,7 @@
                    projectFiles="true">
       <itemPath>BibGenerica.cpp</itemPath>
       <itemPath>FunConEnteros.cpp</itemPath>
+      <itemPath>FunConRegistro.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -48,6 +50,10 @@
       <item path="FunConEnteros.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FunConEnteros.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FunConRegistro.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FunConRegistro.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -81,6 +87,10 @@
       <item path="FunConEnteros.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="FunConEnteros.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FunConRegistro.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FunConRegistro.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

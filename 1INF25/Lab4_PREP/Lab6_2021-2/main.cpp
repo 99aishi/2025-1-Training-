@@ -11,7 +11,7 @@
  */
 #include "BibGenerica.hpp"
 #include "FunConEnteros.hpp"
-
+#include "FunConRegistro.hpp"
 
 /*
  * 
@@ -23,9 +23,9 @@ int main(int argc, char** argv) {
     imprimirnum(cola,"Reporte.txt");
     descargarcola(cola,muestranumero,"Orden.txt");
     
-//    creacola(cola,leepedido,prioridadpedido,"Pedidos.csv");
+    creacola(cola,leepedido,prioridadpedido,"Pedidos.csv");
 //    imprimirped(cola,"Reppedidos.csv");
-//    descargarcola(cola,muestrapedido,"Orden.txt");    
+    descargarcola(cola,muestrapedido,"OrdenFinal.txt");    
     return 0;
 }
 

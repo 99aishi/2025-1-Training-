@@ -16,8 +16,7 @@ void creacola(void *&cola,void*(*leenumero)(ifstream &),void (*prioridadnumero)(
     ifstream input(nom,ios::in);
     if(!input) exit(1);
     
-    construircola(cola);
-    
+    construircola(cola);    
     while(true){
         void* registro=leenumero(input);
         if(input.eof()) break;

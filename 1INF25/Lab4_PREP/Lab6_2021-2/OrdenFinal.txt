@@ -1,0 +1,53 @@
+1     E    15129661    Wong Martel Madeleine                                       QA53897
+2     A    33958767    Aquino Toro Valentina Rocio                                 SK15788
+3     D    77001234    Diaz Correa Irma Virginia                                   LM05731
+4     E    17750908    Hernandez Barrios Emilio                                    XW06135
+5     E    26916299    Diaz Antezano Magali Silvana                                ZK87496
+6     D    83265244    Pairazaman Alamo Moises Miguel                              PL70268
+7     D    83265244    Pairazaman Alamo Moises Miguel                              FW74175
+8     E    14268463    Raffo Chung Adria Gloria                                    FY82455
+9     E    26916299    Diaz Antezano Magali Silvana                                SV17719
+10    A    63602514    Auris Zimic Javier Daniel                                   FW74175
+11    A    87804471    Cerna Durand Martin                                         MG75057
+12    E    26916299    Diaz Antezano Magali Silvana                                KW25071
+13    E    66152145    Salas Aguero Daniel                                         FW74175
+14    E    99215341    Raffo Arias Surami Annie                                    SV17719
+15    E    50860318    Prado Vergel Carlos Julian                                  SV17719
+16    E    50860318    Prado Vergel Carlos Julian                                  BB35881
+17    D    49516360    Delgado Gonzales Guillermo Alfonso                          SV17719
+18    E    37500242    Vasquez Paz Alex Martin                                     QV96140
+19    A    72832218    Corrales Tsukazan Irma Lourdes                              XW06135
+20    E    17750908    Hernandez Barrios Emilio                                    ZK87496
+21    E    37500242    Vasquez Paz Alex Martin                                     ZK87496
+22    A    63602514    Auris Zimic Javier Daniel                                   FY25192
+23    D    37751890    Shirakawa Miranda Madeleine                                 FW74175
+24    E    17750908    Hernandez Barrios Emilio                                    OT07742
+25    E    50860318    Prado Vergel Carlos Julian                                  FW74175
+26    D    81082011    Arroyo Gordillo Maria Heli                                  FW74175
+27    D    61039260    Mejia De La Haza Francisco Edgar                            MG75057
+28    A    54393647    Norabuena Preciado Cinthia                                  ZK87496
+29    A    33958767    Aquino Toro Valentina Rocio                                 SV17719
+30    E    33115577    Chumpitaz Iberos Ronal                                      ZK87496
+31    D    49516360    Delgado Gonzales Guillermo Alfonso                          ZK87496
+32    E    66152145    Salas Aguero Daniel                                         ZR63735
+33    E    14268463    Raffo Chung Adria Gloria                                    MG75057
+34    A    54393647    Norabuena Preciado Cinthia                                  BB35881
+35    D    61039260    Mejia De La Haza Francisco Edgar                            XW06135
+36    E    50860318    Prado Vergel Carlos Julian                                  SA04133
+37    E    92240876    Vega Garcia Janet Rebeca                                    FW74175
+38    D    83265244    Pairazaman Alamo Moises Miguel                              QA53897
+39    E    11750801    Shirakawa Ortega Angel                                      NF53199
+40    D    77001234    Diaz Correa Irma Virginia                                   ZM20053
+41    E    37500242    Vasquez Paz Alex Martin                                     UW23132
+42    A    33958767    Aquino Toro Valentina Rocio                                 MG75057
+43    E    14268463    Raffo Chung Adria Gloria                                    SA04133
+44    E    35030611    Inga Flores Cesar Adolfo                                    FW74175
+45    D    77001234    Diaz Correa Irma Virginia                                   VA35843
+46    E    11750801    Shirakawa Ortega Angel                                      MG75057
+47    E    26916299    Diaz Antezano Magali Silvana                                FW74175
+48    E    15129661    Wong Martel Madeleine                                       ZK87496
+49    D    61039260    Mejia De La Haza Francisco Edgar                            OC73472
+50    A    63602514    Auris Zimic Javier Daniel                                   MG75057
+51    D    77001234    Diaz Correa Irma Virginia                                   FW74175
+52    D    81082011    Arroyo Gordillo Maria Heli                                  ZK87496
+53    E¢È¢&JØ99215341    Raffo Arias Surami Annie                                    ZM20053
