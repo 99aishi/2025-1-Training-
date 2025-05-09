@@ -16,4 +16,6 @@
 void creacola(void *&cola,void*(*leenumero)(ifstream &),void (*prioridadnumero)(void *, void*),const char*nom);
 void imprimirnum(void *cola,const char *nom);
 void construircola(void *&cola);
+void* desencolar(void *&cola);
+void descargarcola(void *&cola,void(*muestranumero)(void*,ofstream&),const char *nom);
 #endif /* BIBGENERICA_HPP */

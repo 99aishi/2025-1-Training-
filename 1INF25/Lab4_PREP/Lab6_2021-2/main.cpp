@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
     void *cola;
     creacola(cola,leenumero,prioridadnumero,"numeros.txt");
     imprimirnum(cola,"Reporte.txt");
-//    descargarcola(cola,muestranumero,"Orden.txt");
+    descargarcola(cola,muestranumero,"Orden.txt");
     
 //    creacola(cola,leepedido,prioridadpedido,"Pedidos.csv");
 //    imprimirped(cola,"Reppedidos.csv");

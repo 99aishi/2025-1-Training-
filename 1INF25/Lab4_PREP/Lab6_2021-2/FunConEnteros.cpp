@@ -115,3 +115,9 @@ bool esColaVacia(void *cola){
     void** arr_cola=(void**)cola;
     return arr_cola[INICIO]==nullptr;
 }
+void muestranumero(void *reg, ofstream &repo){
+    void**registro=(void**)reg;
+    int *num=(int*)registro[0];
+    
+    repo <<right<<setw(4)<< *num <<endl;
+}

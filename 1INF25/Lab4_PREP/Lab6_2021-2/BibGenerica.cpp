@@ -41,4 +41,44 @@ void imprimirnum(void *cola,const char *nom){
         repo << *ptr<<endl;
         recorrido=(void**)recorrido[PTR];
     }
+    void **p1=(void**)arr_cola[PRIMERA];    
+    void **dato=(void**)p1[DATO];
+        int *ptr1=(int*)dato[0];
+        repo << "PRIORIDAD 1 : "<<*ptr1<<endl;;
+    void **p2=(void**)arr_cola[SEGUNDA]; 
+    dato=(void**)p2[DATO];
+        int *ptr2=(int*)dato[0];
+        repo << "PRIORIDAD 2 : "<<*ptr2<<endl;;
+    void **p3=(void**)arr_cola[TERCERA];
+    dato=(void**)p3[DATO];
+        int *ptr3=(int*)dato[0];
+        repo << "PRIORIDAD 3 : "<<*ptr3<<endl;;
+    
+}
+
+
+void descargarcola(void *&cola,void(*muestranumero)(void*,ofstream&),const char *nom){
+    ofstream repo(nom,ios::out);
+    int i=0;
+    while(true){
+        void* reg = desencolar(cola);
+        repo << left<<setw(6)<<i+1;
+        muestranumero(reg,repo);
+        i++;
+        void ** arr_cola=(void**)cola;
+        if(arr_cola[INICIO]==nullptr) break;
+    }
+    
+    
+}
+void* desencolar(void *&cola){
+    void **arr_cola=(void**)cola;
+    void **nodo=(void**)arr_cola[INICIO];
+    void **reg=(void**)nodo[DATO];
+    void **siguiente=(void**)nodo[PTR];  
+    arr_cola[INICIO]=siguiente;
+    void*aux=(void**)nodo[DATO];
+      
+    delete nodo;    
+    return aux;
 }

@@ -17,4 +17,5 @@ void* leenumero(ifstream &input);
 void prioridadnumero(void* cola,void*elemento);
 void insertar_prioridad(void* cola,void *elemento);
 bool esColaVacia(void *cola);
+void muestranumero(void *reg, ofstream &repo);
 #endif /* FUNCONENTEROS_HPP */
