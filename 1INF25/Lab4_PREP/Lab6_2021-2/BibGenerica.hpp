@@ -13,9 +13,17 @@
 #ifndef BIBGENERICA_HPP
 #define BIBGENERICA_HPP
 #include "utils.hpp"
-void creacola(void *&cola,void*(*leenumero)(ifstream &),void (*prioridadnumero)(void *, void*),const char*nom);
+void creacola(void *&cola,void*(*leenumero)(ifstream &),int (*prioridadnumero)(void*),const char*nom);
 void imprimirnum(void *cola,const char *nom);
 void construircola(void *&cola);
+bool esColaVacia(void *cola);
 void* desencolar(void *&cola);
 void descargarcola(void *&cola,void(*muestranumero)(void*,ofstream&),const char *nom);
+void encola(void *dato,void *cola,int prio);
+void insertar_prioridad(void** arr_cola,void **elemento, int prio);
+void imprimirped(void *cola,const char *nom);
+
+void insertar1(void **arr_cola,void **nuevo_nodo,int prio);
+void insertar2(void** arr_cola,void **nuevo_nodo, int prio);
+void insertar3(void **arr_cola,void **nuevo_nodo,int prio);
 #endif /* BIBGENERICA_HPP */

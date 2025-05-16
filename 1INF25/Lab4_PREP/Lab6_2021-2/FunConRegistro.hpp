@@ -15,7 +15,7 @@
 #include "utils.hpp"
 void* leepedido(ifstream &input);
 char *leer_cadena(ifstream &input,int size,char delim);
-void prioridadpedido(void *cola,void* registro);
+int prioridadpedido(void *dato);
 void muestrapedido(void *reg,ofstream &repo);
 void insertar_prioridad_libros(void* cola,void *elemento);
 #endif /* FUNCONREGISTRO_HPP */
