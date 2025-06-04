@@ -1,10 +1,10 @@
-build/Debug/MinGW-Windows/Estante.o: Estante.cpp Estante.hpp Espacio.hpp \
- utils.hpp Libro.hpp
+build/Debug/MinGW-Windows/Estante.o: Estante.cpp Estante.hpp Libro.hpp \
+ utils.hpp Espacio.hpp
 
 Estante.hpp:
 
-Espacio.hpp:
+Libro.hpp:
 
 utils.hpp:
 
-Libro.hpp:
+Espacio.hpp:

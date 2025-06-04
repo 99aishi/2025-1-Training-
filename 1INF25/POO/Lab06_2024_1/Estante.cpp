@@ -7,15 +7,15 @@
  * File:   Estante.cpp
  * Author: 999
  * 
- * Created on June 1, 2025, 4:39 PM
+ * Created on June 3, 2025, 12:59 PM
  */
 
 #include "Estante.hpp"
 
 Estante::Estante() {
+    espacios=nullptr;
     codigo=nullptr;
     cantidad_libros=0;
-    espacios=nullptr;
 }
 
 Estante::Estante(const Estante& orig) {
@@ -49,7 +49,7 @@ int Estante::GetAnchura() const {
 }
 
 void Estante::SetCodigo(const char* codigo) {
-    if(codigo!=nullptr) delete this->codigo;
+    if(this->codigo!=nullptr) delete this->codigo;
     this->codigo=new char[strlen(codigo)+1];
     strcpy(this->codigo,codigo);
 }
@@ -58,76 +58,74 @@ void Estante::GetCodigo(char *codigo) const {
     if(this->codigo==nullptr) codigo[0]=0;
     else strcpy(codigo,this->codigo);
 }
-
-void Estante::leer(ifstream &input){
-    char c, cod[5];
-    input.getline(cod,5,',');
+void Estante::Leer(ifstream &in){
+    char c,cod[8];
+    in.getline(cod,8,',');
+    in >> anchura >> c>>altura;
     SetCodigo(cod);
-    input >> altura >> c >> anchura;
-    input.get();
-    this->espacios= new Espacio[anchura*altura]{};
+    in.get();
+    espacios= new Espacio[anchura*altura]{};
 }
-
-void operator >> (ifstream &input, Estante &estante){
-    estante.leer(input);
+void operator >> (ifstream &in, Estante &e){
+    e.Leer(in);
 }
-
-
-int Estante::get_espacios_restantes(){
-    int ancho_utilizado=0;
-    for (int i = 0; i < cantidad_libros; i++) {
-        ancho_utilizado += libros[i].GetAncho();
+int Estante::calcular_ancho_ocupado(){
+    int ocupado=0;
+    for (int i=0; i < anchura; i++) {
+        if(espacios[(altura-1)*anchura +i ].GetContenido() != ' ') ocupado++;
     }
-    return ancho_utilizado;
+//    for (int i = 0; i < cantidad_libros; i++) {
+//        ocupado+= libros[i].GetAncho();
+//    }
+
+    return ocupado;
+
+    
 }
-void Estante::colocar_libro(int ancho_utilizado,Libro &libro){
-    for (int i = altura-1; i > (altura-libro.GetAlto()-1); i--) {
-        for (int k = ancho_utilizado; k < ancho_utilizado+libro.GetAncho(); k++) {
+void Estante::colocar_libro(Libro &libro, int ancho_ocupado){
+    int alto_libro=libro.GetAlto(), ancho_libro=libro.GetAncho();
+    for (int i = altura-1; i > (altura-alto_libro)-1; i--) {
+        for (int k = ancho_ocupado; k < (ancho_ocupado+ancho_libro); k++) {
+            espacios[i*anchura+k].SetContenido('*');
             espacios[i*anchura+k].SetPosX(i);
             espacios[i*anchura+k].SetPosY(k);
-            espacios[i*anchura+k].SetContenido('*');
         }
     }
+    
     libro.SetColocado(true);
     libros[cantidad_libros]=libro;
     cantidad_libros++;
 }
-bool Estante::operator +=(Libro &libro){
-    int alto_libro=libro.GetAlto();
-    int ancho_libro= libro.GetAncho();
-    int ancho_utilizado=get_espacios_restantes();
-    
-    if(alto_libro<=altura and ancho_libro <= (anchura-ancho_utilizado)){
-        colocar_libro(ancho_utilizado,libro);
+bool Estante::operator += (Libro &libro){
+    int alto_libro=libro.GetAlto(), ancho_libro=libro.GetAncho();
+    int ancho_ocupado=calcular_ancho_ocupado();
+    if(alto_libro<=altura and ancho_libro<=(anchura-ancho_ocupado)/*ancho ocupado*/){
+        colocar_libro(libro, ancho_ocupado);
         return true;
     }else
         return false;
 }
-void Estante::imprime_linea(ofstream &output,int size, char car){
-    for (int i=0;i<size;i++)
-        output<<car;
-    output<<endl;
+void Estante::imprime_linea(ofstream &out,int size,char car){
+    out << setfill(car)<<setw(size)<<" ";
+    out<<setfill(' ')<<endl;
 }
-void Estante::pinta_estante(ofstream &output){
-    imprime_linea(output,50,'-');
-    output<<endl;
+void Estante::Mostrar(ofstream &out){
+    char cod[5];
+    GetCodigo(cod);
+    out << "Codigo Estante: "<< cod << "Cantidad de Libros: "<< cantidad_libros<<endl;
+    out << "Anchura del Estante: "<< anchura << "Altura del Estante: "<< altura<<endl;
+    imprime_linea(out,50,'-');
     
     for (int i = 0; i < altura; i++) {
-        for (int j = 0; j < anchura; j++) {
-            output << espacios[i*anchura+j];
+        for (int k = 0; k < anchura; k++) {
+            out << espacios[i*anchura+k];
         }
-        output<<endl;
+        out << endl;
+    }
+    for (int i = 0; i < cantidad_libros; i++) {
+        out<<libros[i];
     }
 }
-void Estante::mostrar(ofstream &output){
-    imprime_linea(output, 50, '-');
-    output << left<<"Codigo de Estante : " << setw(10) << codigo << "Cantidad de Libro: " << cantidad_libros << endl;
-    output << left<< "Anchura del estante: " << setw(10) << anchura << "Altura del estante: " << altura << endl;
-    pinta_estante(output);
-    imprime_linea(output, 50, '.');
-    for(int i=0;i<cantidad_libros;i++)
-        output << libros[i];
-}
-void operator << (ofstream &output, Estante &estante){
-    estante.mostrar(output);
+void operator << (ofstream &out,Estante &e){
+    e.Mostrar(out);
 }

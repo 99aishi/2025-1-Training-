@@ -4,14 +4,15 @@
  */
 
 #include "Biblioteca.hpp"
-using namespace std;
+
 
 /* 
  * File:   main.cpp
  * Author: 999
  *
- * Created on June 1, 2025, 4:06 PM
+ * Created on June 3, 2025, 12:46 PM
  */
+
 
 /*
  * 
@@ -19,7 +20,9 @@ using namespace std;
 int main(int argc, char** argv) {
     Biblioteca biblioteca;
     biblioteca.cargar_libros();
+//    cout << biblioteca.GetCantidad_libros()<<endl;
     biblioteca.cargar_estantes();
+//    cout << biblioteca.GetCantidad_estantes();
     biblioteca.posicionar_libros();
     biblioteca.mostrar_datos();
     return 0;

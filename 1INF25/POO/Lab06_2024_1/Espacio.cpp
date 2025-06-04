@@ -7,15 +7,15 @@
  * File:   Espacio.cpp
  * Author: 999
  * 
- * Created on June 1, 2025, 4:37 PM
+ * Created on June 3, 2025, 12:55 PM
  */
 
 #include "Espacio.hpp"
 
 Espacio::Espacio() {
+    contenido = ' ';
     posX=0;
     posY=0;
-    contenido = ' ';
 }
 
 Espacio::Espacio(const Espacio& orig) {
@@ -47,9 +47,9 @@ void Espacio::SetContenido(char contenido) {
 char Espacio::GetContenido() const {
     return contenido;
 }
-void Espacio::mostrar(ofstream &output){
-    output << "[ " <<contenido<< " ]";
+void Espacio::Mostrar(ofstream &out){
+    out << "[ " <<contenido<<" ]";
 }
-void operator << (ofstream &output, Espacio &esp){
-    esp.mostrar(output);
+void operator << (ofstream &out, Espacio&e){
+    e.Mostrar(out);
 }

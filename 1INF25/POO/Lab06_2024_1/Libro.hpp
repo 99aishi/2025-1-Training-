@@ -7,13 +7,12 @@
  * File:   Libro.hpp
  * Author: 999
  *
- * Created on June 1, 2025, 4:25 PM
+ * Created on June 3, 2025, 12:52 PM
  */
 
 #ifndef LIBRO_HPP
 #define LIBRO_HPP
 #include "utils.hpp"
-
 class Libro {
 public:
     Libro();
@@ -26,26 +25,21 @@ public:
     void SetAncho(int ancho);
     int GetAncho() const;
     void SetNombre(const char* nombre);
-    void GetNombre(char *) const; // se voidea
+    void GetNombre(char *) const;
     void SetCodigo(const char* codigo);
-    void GetCodigo(char *) const; // se voidea
+    void GetCodigo(char *) const;
     
-    void mostrar(ofstream &);
-    void leer(ifstream &);
+    void Leer(ifstream &);
+    void Mostrar(ofstream &);
 private:
-    char *codigo;
-    char *nombre;
+    char*codigo;
+    char*nombre;
     int ancho;
     int alto;
     bool colocado;
 };
 
-
-void operator >> (ifstream &input, Libro &libro);
-void operator << (ofstream &output,Libro &libro);
-
-
-
-
+void operator >> (ifstream &in, Libro &libro);
+void operator << (ofstream &out,Libro &libro);
 #endif /* LIBRO_HPP */
 

@@ -7,12 +7,14 @@
  * File:   Biblioteca.cpp
  * Author: 999
  * 
- * Created on June 1, 2025, 4:44 PM
+ * Created on June 3, 2025, 1:03 PM
  */
 
 #include "Biblioteca.hpp"
 
 Biblioteca::Biblioteca() {
+    cantidad_estantes=0;
+    cantidad_libros=0;
 }
 
 Biblioteca::Biblioteca(const Biblioteca& orig) {
@@ -39,55 +41,37 @@ int Biblioteca::GetCantidad_estantes() const {
 
 void Biblioteca::cargar_libros(){
     ifstream input("libros.csv",ios::in);
-    int n=0;
     while(true){
         Libro libro;
-        input >>libro;
+        input >> libro;
         if(input.eof()) break;
-        libros[n]=libro;
-        n++;
+        libros[cantidad_libros]=libro;
+        cantidad_libros++;
     }
-    SetCantidad_libros(n);
 }
 void Biblioteca::cargar_estantes(){
     ifstream input("estantes.csv",ios::in);
-    int n=0;
     while(true){
         Estante estante;
-        input >>estante;
+        input >> estante;
         if(input.eof()) break;
-        estantes[n]=estante;
-        n++;
+        estantes[cantidad_estantes]=estante;
+        cantidad_estantes++;
     }
-    SetCantidad_estantes(n);
 }
 void Biblioteca::posicionar_libros(){
-    for (int i = 0; i < cantidad_libros; ++i) {
+    for (int i = 0; i < cantidad_libros; i++) {
         for (int k = 0; k < cantidad_estantes; k++) {
-            if(estantes[k]+=libros[i]) break;
+            if(estantes[k]+=libros[i]) 
+                break;
         }
     }
-}
-void Biblioteca::imprime_linea(ofstream& output, int n, char c) {
-    output << setfill(c) << setw(n) << " " << endl;
-    output << setfill(' ');
-}
 
-void Biblioteca::mostrar_datos() {
+}
+void Biblioteca::mostrar_datos(){
+    ofstream repo("Reporte.txt",ios::out);
+    for (int i = 0; i < cantidad_estantes; i++) {
+        repo << estantes[i];
+    }
 
-    ofstream output("reporte.txt", ios::out);
-    imprime_linea(output, 50, '=');
-    output << right << setw(45) << "Informacion del posicionamiento de Libros" << endl;
-    output << right << setw(40) << "en los estantes de la Biblioteca " << endl;
-    imprime_linea(output, 50, '=');
-    output << "Cantidad de Estantes: " << cantidad_estantes << endl;
-    for (int i = 0; i < cantidad_estantes; i++)
-        output << estantes[i];
-    imprime_linea(output, 50, '=');
-    output << "Informacion de todos los Libros: " << endl;
-    output << "Cantidad de Libros Total: " << cantidad_libros << endl;
-    for (int i = 0; i < cantidad_libros; i++)
-        output<<libros[i];
-    imprime_linea(output, 50, '=');
-    output << endl;
 }

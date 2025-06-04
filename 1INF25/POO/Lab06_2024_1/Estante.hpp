@@ -7,13 +7,14 @@
  * File:   Estante.hpp
  * Author: 999
  *
- * Created on June 1, 2025, 4:39 PM
+ * Created on June 3, 2025, 12:59 PM
  */
 
 #ifndef ESTANTE_HPP
 #define ESTANTE_HPP
-#include "Espacio.hpp"
+
 #include "Libro.hpp"
+#include "Espacio.hpp"
 
 
 class Estante {
@@ -29,22 +30,24 @@ public:
     int GetAnchura() const;
     void SetCodigo(const char* codigo);
     void GetCodigo(char *) const;
-    void leer(ifstream &);
-    void mostrar(ofstream &);
-    int get_espacios_restantes();
-    void imprime_linea(ofstream &output,int size, char car);
-    void pinta_estante(ofstream &output);
-    void colocar_libro(int ,Libro &);
-    bool operator+=(Libro&);
+    
+    
+    void Leer(ifstream &);
+    bool operator += (Libro &libro);
+    int calcular_ancho_ocupado();
+    void colocar_libro(Libro &libro, int);
+    
+    void Mostrar(ofstream &);
+    void imprime_linea(ofstream &out,int size,char car);
 private:
     char *codigo;
     int anchura;
     int altura;
     Libro libros[10];
-    Espacio *espacios;
     int cantidad_libros;
+    Espacio *espacios;
 };
-void operator >> (ifstream &input, Estante &estante);
-void operator << (ofstream &output, Estante &estante);
+void operator >> (ifstream &in, Estante &e);
+void operator << (ofstream &out,Estante &e);
 #endif /* ESTANTE_HPP */
 

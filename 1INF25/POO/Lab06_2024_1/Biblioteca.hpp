@@ -7,12 +7,14 @@
  * File:   Biblioteca.hpp
  * Author: 999
  *
- * Created on June 1, 2025, 4:44 PM
+ * Created on June 3, 2025, 1:03 PM
  */
 
 #ifndef BIBLIOTECA_HPP
+#define BIBLIOTECA_HPP
+
 #include "Estante.hpp"
-#include "Libro.hpp"
+
 
 class Biblioteca {
 public:
@@ -24,16 +26,14 @@ public:
     void SetCantidad_estantes(int cantidad_estantes);
     int GetCantidad_estantes() const;
     
-    
     void cargar_libros();
     void cargar_estantes();
     void posicionar_libros();
     void mostrar_datos();
-    void imprime_linea(ofstream& output, int n, char c);
 private:
-    Estante estantes[10];
+    Estante estantes[5];
     int cantidad_estantes;
-    Libro libros[10];
+    Libro libros[15];
     int cantidad_libros;
 };
 

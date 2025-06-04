@@ -7,14 +7,15 @@
  * File:   Libro.cpp
  * Author: 999
  * 
- * Created on June 1, 2025, 4:25 PM
+ * Created on June 3, 2025, 12:52 PM
  */
 
 #include "Libro.hpp"
 
 Libro::Libro() {
-    codigo= nullptr;
     nombre=nullptr;
+    codigo=nullptr;
+//    colocado=false;
 }
 
 Libro::Libro(const Libro& orig) {
@@ -48,44 +49,48 @@ int Libro::GetAncho() const {
 }
 
 void Libro::SetNombre(const char* nombre) {
-    if(nombre != nullptr) delete this->nombre;
-    this->nombre = new char[strlen(nombre)+1];
+    if(this->nombre!=nullptr) delete this->nombre;
+    this->nombre=new char[strlen(nombre)+1];
     strcpy(this->nombre,nombre);
 }
 
 void Libro::GetNombre(char *nombre) const {
-    if(this->nombre==nullptr) nombre[0]=0;
+    if(this->nombre==nullptr)nombre[0]=0;
     else strcpy(nombre,this->nombre);
 }
 
-
 void Libro::SetCodigo(const char* codigo) {
-    if(codigo!=nullptr) delete this->codigo;
+    if(this->codigo!=nullptr) delete this->codigo;
     this->codigo=new char[strlen(codigo)+1];
     strcpy(this->codigo,codigo);
 }
-    
+
 void Libro::GetCodigo(char *codigo) const {
-    if(this->codigo==nullptr) codigo[0]=0;
+    if(this->codigo==nullptr)codigo[0]=0;
     else strcpy(codigo,this->codigo);
 }
-
-void Libro::leer(ifstream &input){
-    char cod[8], nomb[60],c;
-    input.getline(cod,8,',');
-    input.getline(nomb,60,',');
+void Libro::Leer(ifstream &in){
+    char cod[10],nom[40],c;
+    in.getline(cod,10,',');
+    in.getline(nom,40,',');
+    in >> ancho>>c >>alto;
+    in.get();
+    SetNombre(nom);
     SetCodigo(cod);
-    SetNombre(nomb);
-    input >> ancho >> c >> alto;
     colocado=false;
-    input.get();
 }
-void operator >> (ifstream &input, Libro &libro){
-    libro.leer(input);
+void Libro::Mostrar(ofstream &out){
+    char cod[10],nom[60];
+    GetCodigo(cod);
+    GetNombre(nom);
+    if(colocado)
+        out << left<< setw(10)<<cod<<setw(40)<<nom<<setw(4)<<ancho<<alto<<endl;
+    else
+        out << left<< setw(10)<<cod<<setw(40)<<"NO SE PUDO COLOCAR"<<setw(4)<<ancho<<alto<<endl;
 }
-void Libro::mostrar(ofstream &output){
-    output << left <<setw(5)<<codigo<<setw(30) << nombre<<setw(4) << ancho << alto<<endl;
+void operator >> (ifstream &in, Libro &libro){
+    libro.Leer(in);
 }
-void operator << (ofstream &output,Libro &libro){
-    libro.mostrar(output);
+void operator << (ofstream &out, Libro &libro){
+    libro.Mostrar(out);
 }

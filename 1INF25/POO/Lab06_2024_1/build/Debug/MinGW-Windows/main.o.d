@@ -1,12 +1,12 @@
 build/Debug/MinGW-Windows/main.o: main.cpp Biblioteca.hpp Estante.hpp \
- Espacio.hpp utils.hpp Libro.hpp
+ Libro.hpp utils.hpp Espacio.hpp
 
 Biblioteca.hpp:
 
 Estante.hpp:
 
-Espacio.hpp:
+Libro.hpp:
 
 utils.hpp:
 
-Libro.hpp:
+Espacio.hpp:

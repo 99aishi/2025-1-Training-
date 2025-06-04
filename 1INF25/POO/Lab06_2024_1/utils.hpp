@@ -7,19 +7,18 @@
  * File:   utils.hpp
  * Author: 999
  *
- * Created on June 1, 2025, 4:13 PM
+ * Created on June 3, 2025, 12:51 PM
  */
 
 #ifndef UTILS_HPP
 #define UTILS_HPP
 
-
 #include <iostream>
-#include <iomanip>
 #include <fstream>
+#include <iomanip>
 #include <cstring>
-using namespace std;
 
+using namespace std;
 
 #endif /* UTILS_HPP */
 

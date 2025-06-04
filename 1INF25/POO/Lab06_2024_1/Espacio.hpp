@@ -7,7 +7,7 @@
  * File:   Espacio.hpp
  * Author: 999
  *
- * Created on June 1, 2025, 4:37 PM
+ * Created on June 3, 2025, 12:55 PM
  */
 
 #ifndef ESPACIO_HPP
@@ -24,15 +24,14 @@ public:
     int GetPosX() const;
     void SetContenido(char contenido);
     char GetContenido() const;
-    void mostrar(ofstream &);
-private:
+    
+    void Mostrar(ofstream &);
+private:    
     char contenido;
     int posX;
     int posY;
 };
 
-void operator << (ofstream &, Espacio &);
-
-
+void operator << (ofstream &out, Espacio&e);
 #endif /* ESPACIO_HPP */
 
