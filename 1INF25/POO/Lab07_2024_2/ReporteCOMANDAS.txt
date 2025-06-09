@@ -1,0 +1,458 @@
+CODIGO DE COMANDA: 142  ATENCION: 22:21      SERVICIO: 22:38
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  grande
+               Agua Mineral                  2.50      Tamano:  pequeno
+     Entradas pedidas: 
+               Quesadillas                   5.50      Picante:    No
+               Bruschetta                    4.00      Picante:    Si
+     Platos de Fondo pedidos: 
+               Pasta Alfredo                 10.00     Proteina en el plato: Carne Lacteos 
+               Pollo a la Brasa              15.00     Proteina en el plato: Pollo Carne Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :39.00
+
+CODIGO DE COMANDA: 161  ATENCION: 04:26      SERVICIO: 05:08
+     Bebidas pedidas: 
+               Agua Mineral                  2.50      Tamano:  mediano
+               Coca-Cola                     3.50      Tamano:  grande
+     Entradas pedidas: 
+               Quesadillas                   5.50      Picante:    No
+               Ensalada Cesar                6.00      Picante:    Si
+               Nachos                        5.00      Picante:    Si
+               Ensalada Cesar                6.00      Picante:    No
+TOTAL RECAUDADO EN LA COMANDA :28.50
+
+CODIGO DE COMANDA: 169  ATENCION: 12:12      SERVICIO: 12:49
+     Bebidas pedidas: 
+               Jugo de Naranja               4.00      Tamano:  mediano
+     Platos de Fondo pedidos: 
+               Pasta Alfredo                 10.00     Proteina en el plato: Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :14.00
+
+CODIGO DE COMANDA: 180  ATENCION: 11:32      SERVICIO: 12:54
+     Bebidas pedidas: 
+               Jugo de Naranja               4.00      Tamano:  pequeno
+               Jugo de Naranja               4.00      Tamano:  mediano
+               Cafe                          2.00      Tamano:  mediano
+     Entradas pedidas: 
+               Nachos                        5.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Ceviche                       9.00      Proteina en el plato: Carne Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :24.00
+
+CODIGO DE COMANDA: 191  ATENCION: 02:09      SERVICIO: 02:31
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  pequeno
+               Cafe                          2.00      Tamano:  mediano
+     Entradas pedidas: 
+               Bruschetta                    4.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Strogonoff                    25.75     Proteina en el plato: Pollo Pescado 
+TOTAL RECAUDADO EN LA COMANDA :33.75
+
+CODIGO DE COMANDA: 194  ATENCION: 01:12      SERVICIO: 02:10
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  mediano
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    Si
+TOTAL RECAUDADO EN LA COMANDA :8.00
+
+CODIGO DE COMANDA: 200  ATENCION: 06:21      SERVICIO: 06:56
+     Bebidas pedidas: 
+               Sprite                        3.00      Tamano:  mediano
+               Cafe                          2.00      Tamano:  mediano
+               Coca-Cola                     3.50      Tamano:  mediano
+TOTAL RECAUDADO EN LA COMANDA :8.50
+
+CODIGO DE COMANDA: 214  ATENCION: 22:11      SERVICIO: 23:01
+     Bebidas pedidas: 
+               Sprite                        3.00      Tamano:  pequeno
+TOTAL RECAUDADO EN LA COMANDA :3.00
+
+CODIGO DE COMANDA: 228  ATENCION: 15:43      SERVICIO: 16:40
+     Entradas pedidas: 
+               Quesadillas                   5.50      Picante:    Si
+     Platos de Fondo pedidos: 
+               Filete de Pescado             11.00     Proteina en el plato: Carne Pescado 
+TOTAL RECAUDADO EN LA COMANDA :16.50
+
+CODIGO DE COMANDA: 299  ATENCION: 12:17      SERVICIO: 13:02
+     Entradas pedidas: 
+               Guacamole                     4.50      Picante:    No
+               Nachos                        5.00      Picante:    Si
+     Platos de Fondo pedidos: 
+               Hamburguesa                   8.50      Proteina en el plato: Pollo 
+TOTAL RECAUDADO EN LA COMANDA :18.00
+
+CODIGO DE COMANDA: 327  ATENCION: 15:47      SERVICIO: 17:15
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  mediano
+               Jugo de Naranja               4.00      Tamano:  grande
+               Agua Mineral                  2.50      Tamano:  grande
+     Entradas pedidas: 
+               Bruschetta                    4.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Hamburguesa                   8.50      Proteina en el plato: Pescado 
+TOTAL RECAUDADO EN LA COMANDA :21.00
+
+CODIGO DE COMANDA: 328  ATENCION: 21:07      SERVICIO: 21:24
+     Bebidas pedidas: 
+               Coca-Cola                     3.50      Tamano:  grande
+     Platos de Fondo pedidos: 
+               Ceviche                       9.00      Proteina en el plato: Pescado 
+               Pasta Alfredo                 10.00     Proteina en el plato: Carne Pescado Lacteos 
+               Hamburguesa                   8.50      Proteina en el plato: Carne Pescado 
+TOTAL RECAUDADO EN LA COMANDA :31.00
+
+CODIGO DE COMANDA: 358  ATENCION: 12:20      SERVICIO: 13:21
+     Entradas pedidas: 
+               Nachos                        5.00      Picante:    Si
+               Guacamole                     4.50      Picante:    Si
+               Quesadillas                   5.50      Picante:    Si
+TOTAL RECAUDADO EN LA COMANDA :15.00
+
+CODIGO DE COMANDA: 364  ATENCION: 04:16      SERVICIO: 04:35
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  grande
+               Coca-Cola                     3.50      Tamano:  pequeno
+               Jugo de Naranja               4.00      Tamano:  mediano
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    Si
+     Platos de Fondo pedidos: 
+               Ceviche                       9.00      Proteina en el plato: Lacteos 
+               Pollo a la Brasa              15.00     Proteina en el plato: Carne Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :39.50
+
+CODIGO DE COMANDA: 372  ATENCION: 20:24      SERVICIO: 21:05
+     Bebidas pedidas: 
+               Coca-Cola                     3.50      Tamano:  pequeno
+     Entradas pedidas: 
+               Guacamole                     4.50      Picante:    No
+TOTAL RECAUDADO EN LA COMANDA :8.00
+
+CODIGO DE COMANDA: 400  ATENCION: 10:12      SERVICIO: 10:34
+     Bebidas pedidas: 
+               Sprite                        3.00      Tamano:  mediano
+     Entradas pedidas: 
+               Guacamole                     4.50      Picante:    Si
+               Guacamole                     4.50      Picante:    No
+TOTAL RECAUDADO EN LA COMANDA :12.00
+
+CODIGO DE COMANDA: 418  ATENCION: 09:51      SERVICIO: 10:12
+     Bebidas pedidas: 
+               Coca-Cola                     3.50      Tamano:  grande
+               Jugo de Naranja               4.00      Tamano:  pequeno
+     Entradas pedidas: 
+               Nachos                        5.00      Picante:    Si
+               Ensalada Cesar                6.00      Picante:    No
+TOTAL RECAUDADO EN LA COMANDA :18.50
+
+CODIGO DE COMANDA: 438  ATENCION: 22:48      SERVICIO: 23:32
+     Platos de Fondo pedidos: 
+               Strogonoff                    25.75     Proteina en el plato: Carne Pescado Lacteos 
+               Pollo a la Brasa              15.00     Proteina en el plato: Carne Pescado 
+               Pollo a la Brasa              15.00     Proteina en el plato: Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :55.75
+
+CODIGO DE COMANDA: 465  ATENCION: 12:56      SERVICIO: 13:26
+     Bebidas pedidas: 
+               Sprite                        3.00      Tamano:  mediano
+     Entradas pedidas: 
+               Nachos                        5.00      Picante:    Si
+               Ensalada Cesar                6.00      Picante:    No
+               Quesadillas                   5.50      Picante:    No
+     Platos de Fondo pedidos: 
+               Lomo Saltado                  12.00     Proteina en el plato: Carne Pescado Lacteos 
+               Pollo a la Brasa              15.00     Proteina en el plato: Carne 
+TOTAL RECAUDADO EN LA COMANDA :46.50
+
+CODIGO DE COMANDA: 526  ATENCION: 04:12      SERVICIO: 04:38
+     Bebidas pedidas: 
+               Coca-Cola                     3.50      Tamano:  grande
+               Jugo de Naranja               4.00      Tamano:  grande
+               Jugo de Naranja               4.00      Tamano:  mediano
+     Entradas pedidas: 
+               Bruschetta                    4.00      Picante:    No
+               Ensalada Cesar                6.00      Picante:    No
+               Bruschetta                    4.00      Picante:    Si
+     Platos de Fondo pedidos: 
+               Strogonoff                    25.75     Proteina en el plato: Pescado Lacteos 
+               Hamburguesa                   8.50      Proteina en el plato: Pollo Pescado 
+TOTAL RECAUDADO EN LA COMANDA :59.75
+
+CODIGO DE COMANDA: 554  ATENCION: 05:08      SERVICIO: 05:25
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  pequeno
+               Cafe                          2.00      Tamano:  pequeno
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    No
+               Quesadillas                   5.50      Picante:    Si
+     Platos de Fondo pedidos: 
+               Filete de Pescado             11.00     Proteina en el plato: Carne Lacteos 
+               Ceviche                       9.00      Proteina en el plato: Pollo Lacteos 
+               Pasta Alfredo                 10.00     Proteina en el plato: Carne Pescado 
+TOTAL RECAUDADO EN LA COMANDA :45.50
+
+CODIGO DE COMANDA: 556  ATENCION: 19:43      SERVICIO: 20:20
+     Bebidas pedidas: 
+               Coca-Cola                     3.50      Tamano:  grande
+     Entradas pedidas: 
+               Bruschetta                    4.00      Picante:    No
+               Ensalada Cesar                6.00      Picante:    No
+               Nachos                        5.00      Picante:    No
+               Bruschetta                    4.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Pollo a la Brasa              15.00     Proteina en el plato: Pollo Pescado 
+TOTAL RECAUDADO EN LA COMANDA :37.50
+
+CODIGO DE COMANDA: 596  ATENCION: 19:53      SERVICIO: 20:16
+     Entradas pedidas: 
+               Nachos                        5.00      Picante:    Si
+               Guacamole                     4.50      Picante:    No
+     Platos de Fondo pedidos: 
+               Pasta Alfredo                 10.00     Proteina en el plato: Pollo 
+               Ceviche                       9.00      Proteina en el plato: Pollo 
+TOTAL RECAUDADO EN LA COMANDA :28.50
+
+CODIGO DE COMANDA: 648  ATENCION: 18:12      SERVICIO: 19:32
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    Si
+     Platos de Fondo pedidos: 
+               Strogonoff                    25.75     Proteina en el plato: Lacteos 
+               Ceviche                       9.00      Proteina en el plato: Pollo Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :40.75
+
+CODIGO DE COMANDA: 654  ATENCION: 23:28      SERVICIO: 23:48
+     Entradas pedidas: 
+               Guacamole                     4.50      Picante:    Si
+     Platos de Fondo pedidos: 
+               Lomo Saltado                  12.00     Proteina en el plato: Pollo Carne Pescado 
+TOTAL RECAUDADO EN LA COMANDA :16.50
+
+CODIGO DE COMANDA: 660  ATENCION: 01:46      SERVICIO: 02:54
+     Bebidas pedidas: 
+               Agua Mineral                  2.50      Tamano:  mediano
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    No
+               Nachos                        5.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Hamburguesa                   8.50      Proteina en el plato: Pollo Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :22.00
+
+CODIGO DE COMANDA: 684  ATENCION: 18:23      SERVICIO: 19:05
+     Platos de Fondo pedidos: 
+               Pasta Alfredo                 10.00     Proteina en el plato: Pollo Pescado Lacteos 
+               Pollo a la Brasa              15.00     Proteina en el plato: Pescado Lacteos 
+               Strogonoff                    25.75     Proteina en el plato: Pollo 
+               Strogonoff                    25.75     Proteina en el plato: Pescado 
+               Pollo a la Brasa              15.00     Proteina en el plato: Pollo Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :91.50
+
+CODIGO DE COMANDA: 692  ATENCION: 07:53      SERVICIO: 08:31
+     Entradas pedidas: 
+               Nachos                        5.00      Picante:    Si
+               Ensalada Cesar                6.00      Picante:    Si
+     Platos de Fondo pedidos: 
+               Pollo a la Brasa              15.00     Proteina en el plato: Pollo Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :26.00
+
+CODIGO DE COMANDA: 705  ATENCION: 23:02      SERVICIO: 23:36
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  mediano
+               Sprite                        3.00      Tamano:  grande
+TOTAL RECAUDADO EN LA COMANDA :5.00
+
+CODIGO DE COMANDA: 706  ATENCION: 12:59      SERVICIO: 13:59
+     Platos de Fondo pedidos: 
+               Pollo a la Brasa              15.00     Proteina en el plato: Carne Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :15.00
+
+CODIGO DE COMANDA: 727  ATENCION: 00:50      SERVICIO: 01:29
+     Bebidas pedidas: 
+               Sprite                        3.00      Tamano:  mediano
+     Platos de Fondo pedidos: 
+               Filete de Pescado             11.00     Proteina en el plato: Pollo Pescado Lacteos 
+               Pasta Alfredo                 10.00     Proteina en el plato: Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :24.00
+
+CODIGO DE COMANDA: 734  ATENCION: 12:58      SERVICIO: 13:38
+     Platos de Fondo pedidos: 
+               Pasta Alfredo                 10.00     Proteina en el plato: Pollo Pescado 
+               Filete de Pescado             11.00     Proteina en el plato: Pollo Carne Pescado Lacteos 
+               Strogonoff                    25.75     Proteina en el plato: Carne Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :46.75
+
+CODIGO DE COMANDA: 738  ATENCION: 11:40      SERVICIO: 12:43
+     Bebidas pedidas: 
+               Agua Mineral                  2.50      Tamano:  mediano
+               Jugo de Naranja               4.00      Tamano:  grande
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Pollo a la Brasa              15.00     Proteina en el plato: Pollo Pescado 
+               Hamburguesa                   8.50      Proteina en el plato: 
+               Strogonoff                    25.75     Proteina en el plato: Pollo Carne Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :61.75
+
+CODIGO DE COMANDA: 767  ATENCION: 20:49      SERVICIO: 21:27
+     Entradas pedidas: 
+               Bruschetta                    4.00      Picante:    Si
+     Platos de Fondo pedidos: 
+               Hamburguesa                   8.50      Proteina en el plato: Pescado 
+TOTAL RECAUDADO EN LA COMANDA :12.50
+
+CODIGO DE COMANDA: 787  ATENCION: 13:27      SERVICIO: 14:30
+     Bebidas pedidas: 
+               Coca-Cola                     3.50      Tamano:  mediano
+     Entradas pedidas: 
+               Quesadillas                   5.50      Picante:    No
+               Bruschetta                    4.00      Picante:    Si
+               Ensalada Cesar                6.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Filete de Pescado             11.00     Proteina en el plato: Pescado 
+TOTAL RECAUDADO EN LA COMANDA :30.00
+
+CODIGO DE COMANDA: 812  ATENCION: 14:42      SERVICIO: 15:51
+     Bebidas pedidas: 
+               Sprite                        3.00      Tamano:  grande
+               Jugo de Naranja               4.00      Tamano:  grande
+               Jugo de Naranja               4.00      Tamano:  mediano
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Strogonoff                    25.75     Proteina en el plato: Pollo 
+               Ceviche                       9.00      Proteina en el plato: Pollo Carne Pescado Lacteos 
+               Pasta Alfredo                 10.00     Proteina en el plato: Pescado 
+               Hamburguesa                   8.50      Proteina en el plato: Pollo Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :70.25
+
+CODIGO DE COMANDA: 815  ATENCION: 07:19      SERVICIO: 08:42
+     Platos de Fondo pedidos: 
+               Strogonoff                    25.75     Proteina en el plato: Pollo Carne Pescado Lacteos 
+               Ceviche                       9.00      Proteina en el plato: Carne Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :34.75
+
+CODIGO DE COMANDA: 820  ATENCION: 06:30      SERVICIO: 07:20
+     Entradas pedidas: 
+               Nachos                        5.00      Picante:    No
+               Bruschetta                    4.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Ceviche                       9.00      Proteina en el plato: Pollo Carne Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :18.00
+
+CODIGO DE COMANDA: 836  ATENCION: 14:38      SERVICIO: 15:08
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  mediano
+               Sprite                        3.00      Tamano:  mediano
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Pasta Alfredo                 10.00     Proteina en el plato: Carne Pescado 
+TOTAL RECAUDADO EN LA COMANDA :21.00
+
+CODIGO DE COMANDA: 837  ATENCION: 14:19      SERVICIO: 15:22
+     Bebidas pedidas: 
+               Coca-Cola                     3.50      Tamano:  pequeno
+               Coca-Cola                     3.50      Tamano:  grande
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Ceviche                       9.00      Proteina en el plato: Pollo Carne Pescado Lacteos 
+               Hamburguesa                   8.50      Proteina en el plato: Pollo Carne Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :30.50
+
+CODIGO DE COMANDA: 841  ATENCION: 13:54      SERVICIO: 14:46
+     Bebidas pedidas: 
+               Jugo de Naranja               4.00      Tamano:  pequeno
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    No
+               Ensalada Cesar                6.00      Picante:    No
+               Ensalada Cesar                6.00      Picante:    No
+               Nachos                        5.00      Picante:    No
+     Platos de Fondo pedidos: 
+               Pollo a la Brasa              15.00     Proteina en el plato: 
+TOTAL RECAUDADO EN LA COMANDA :42.00
+
+CODIGO DE COMANDA: 844  ATENCION: 09:52      SERVICIO: 11:01
+     Platos de Fondo pedidos: 
+               Pollo a la Brasa              15.00     Proteina en el plato: Pollo Carne Pescado Lacteos 
+               Ceviche                       9.00      Proteina en el plato: Carne Lacteos 
+               Strogonoff                    25.75     Proteina en el plato: 
+TOTAL RECAUDADO EN LA COMANDA :49.75
+
+CODIGO DE COMANDA: 858  ATENCION: 08:48      SERVICIO: 10:15
+     Bebidas pedidas: 
+               Sprite                        3.00      Tamano:  pequeno
+               Jugo de Naranja               4.00      Tamano:  pequeno
+     Platos de Fondo pedidos: 
+               Strogonoff                    25.75     Proteina en el plato: Pescado Lacteos 
+               Ceviche                       9.00      Proteina en el plato: Pescado Lacteos 
+               Ceviche                       9.00      Proteina en el plato: Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :50.75
+
+CODIGO DE COMANDA: 876  ATENCION: 00:37      SERVICIO: 01:19
+     Bebidas pedidas: 
+               Agua Mineral                  2.50      Tamano:  mediano
+     Entradas pedidas: 
+               Ensalada Cesar                6.00      Picante:    No
+               Bruschetta                    4.00      Picante:    No
+               Quesadillas                   5.50      Picante:    No
+     Platos de Fondo pedidos: 
+               Lomo Saltado                  12.00     Proteina en el plato: Carne 
+TOTAL RECAUDADO EN LA COMANDA :30.00
+
+CODIGO DE COMANDA: 879  ATENCION: 00:21      SERVICIO: 01:46
+     Bebidas pedidas: 
+               Jugo de Naranja               4.00      Tamano:  grande
+     Entradas pedidas: 
+               Quesadillas                   5.50      Picante:    No
+     Platos de Fondo pedidos: 
+               Pollo a la Brasa              15.00     Proteina en el plato: Pollo Carne 
+               Hamburguesa                   8.50      Proteina en el plato: Carne Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :33.00
+
+CODIGO DE COMANDA: 936  ATENCION: 08:32      SERVICIO: 09:13
+     Bebidas pedidas: 
+               Coca-Cola                     3.50      Tamano:  pequeno
+     Platos de Fondo pedidos: 
+               Lomo Saltado                  12.00     Proteina en el plato: Carne Pescado Lacteos 
+               Pollo a la Brasa              15.00     Proteina en el plato: Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :30.50
+
+CODIGO DE COMANDA: 947  ATENCION: 13:03      SERVICIO: 14:26
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  pequeno
+               Jugo de Naranja               4.00      Tamano:  grande
+     Entradas pedidas: 
+               Nachos                        5.00      Picante:    Si
+TOTAL RECAUDADO EN LA COMANDA :11.00
+
+CODIGO DE COMANDA: 972  ATENCION: 23:34      SERVICIO: 00:32
+     Bebidas pedidas: 
+               Cafe                          2.00      Tamano:  mediano
+               Coca-Cola                     3.50      Tamano:  mediano
+               Agua Mineral                  2.50      Tamano:  pequeno
+               Jugo de Naranja               4.00      Tamano:  mediano
+     Entradas pedidas: 
+               Bruschetta                    4.00      Picante:    Si
+               Guacamole                     4.50      Picante:    No
+     Platos de Fondo pedidos: 
+               Pollo a la Brasa              15.00     Proteina en el plato: Carne 
+               Pasta Alfredo                 10.00     Proteina en el plato: Carne Pescado Lacteos 
+TOTAL RECAUDADO EN LA COMANDA :45.50
+
+CODIGO DE COMANDA: 981  ATENCION: 07:40      SERVICIO: 07:56
+     Bebidas pedidas: 
+               Sprite                        3.00      Tamano:  pequeno
+               Sprite                        3.00      Tamano:  grande
+     Platos de Fondo pedidos: 
+               Strogonoff                    25.75     Proteina en el plato: Carne 
+               Ceviche                       9.00      Proteina en el plato: Carne 
+TOTAL RECAUDADO EN LA COMANDA :40.75
+
+CODIGO DE COMANDA: 994  ATENCION: 11:59      SERVICIO: 12:24
+     Bebidas pedidas: 
+               Agua Mineral                  2.50      Tamano:  mediano
+               Jugo de Naranja               4.00      Tamano:  mediano
+               Cafe                          2.00      Tamano:  pequeno
+TOTAL RECAUDADO EN LA COMANDA :8.50
+
