@@ -39,7 +39,9 @@ void Arbol::crear(const char *nom) {
         if (input.eof()) break;
         boleta.crear_memoria(tipo);
         boleta.leer(input);
-        insertar_recursivo(raiz, boleta);
+//        insertar_recursivo(raiz, boleta);
+        insertar(boleta);
+        
     }
 }
 
@@ -60,7 +62,9 @@ void Arbol::mostrar_en_orden(const char *nom) {
 
     mostrar_en_orden_recursivo(output, raiz);
 }
-
+void Arbol::insertar(Boleta &boleta){
+    insertar_recursivo(raiz,boleta);
+}
 void Arbol::mostrar_en_orden_recursivo(ofstream &output, Nodo *&arbol) {
     if (arbol) {
         mostrar_en_orden_recursivo(output, arbol->izq);

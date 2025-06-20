@@ -23,6 +23,7 @@ public:
     Arbol(const Arbol& orig);
     virtual ~Arbol();
     void crear(const char *nom);
+    void insertar(Boleta &boleta);
     void mostrar_en_orden(const char *nom);
     void carga_escalas(const char *nom);
     void modificar();

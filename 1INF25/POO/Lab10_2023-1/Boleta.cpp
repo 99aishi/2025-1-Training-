@@ -17,6 +17,7 @@
 #include "Escala.hpp"
 
 Boleta::Boleta() {
+    pboleta=nullptr;
 }
 
 Boleta::Boleta(const Boleta& orig) {
