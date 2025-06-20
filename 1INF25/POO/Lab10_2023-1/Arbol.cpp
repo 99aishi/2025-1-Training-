@@ -20,8 +20,16 @@ Arbol::Arbol(const Arbol& orig) {
 }
 
 Arbol::~Arbol() {
+    eliminar_recursivo(raiz);
+    
 }
-
+void Arbol::eliminar_recursivo(Nodo *&arbol){
+    if(arbol==nullptr){
+        eliminar_recursivo(arbol->der);
+        eliminar_recursivo(arbol->izq);
+        delete arbol;
+    }
+}
 void Arbol::crear(const char *nom) {
     ifstream input(nom, ios::in);
     char tipo, c;

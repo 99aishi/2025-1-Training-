@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/cppFiles/main.cc to edit this template
  */
 
-#include "Tesoreria.hpp"
+
 
 
 /* 
@@ -12,7 +12,7 @@
  *
  * Created on June 19, 2025, 11:35 PM
  */
-
+#include "Tesoreria.hpp"
 /*
  *  
  */
