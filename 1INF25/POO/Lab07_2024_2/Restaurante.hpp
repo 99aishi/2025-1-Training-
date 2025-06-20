@@ -25,10 +25,12 @@ public:
     void imprimir_comandas();
     int buscar_comanda(int comanda);
     void actualizar_comandas();
+    void ordenar();
+    
 private:
     Comanda comandas[205];
     int cantidad_comandas;
 };
-
+int compara_cod(const void* ,const void *);
 #endif /* RESTAURANTE_HPP */
 

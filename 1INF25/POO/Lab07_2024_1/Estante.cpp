@@ -20,6 +20,8 @@ Estante::Estante() {
 }
 
 Estante::Estante(const Estante& orig) {
+    delete codigo;
+    delete espacios;
 }
 
 Estante::~Estante() {
@@ -78,3 +80,6 @@ void Estante::Leer(ifstream &input){
     espacios= new Espacio[anchura*altura]{};
 }
 
+int  calcular_espacio_ocupado(){
+            
+}

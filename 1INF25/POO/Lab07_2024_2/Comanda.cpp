@@ -98,13 +98,9 @@ int Comanda::GetId() const {
 }
 
 void Comanda::leer_bebida(ifstream &input) {
-    char _tam[20];
-    Bebida prod;
-    prod.Leer(input);
-    input.getline(_tam, 20, '\n');
-    prod.SetTamano(_tam);
+
     
-    bebidas[cantidad_bebidas]=prod;
+    bebidas[cantidad_bebidas].Leer(input);
     cantidad_bebidas++;
     
 }
@@ -141,6 +137,8 @@ int Comanda::Leer(ifstream &input, int &bandera){
         input >> c>> tipo>>c;
         if (tipo == 'B')
             leer_bebida(input);
+//        Bebida bebida;
+//        bebida.leer();
         if (tipo == 'E')
             leer_entrada(input);
         if (tipo == 'P')

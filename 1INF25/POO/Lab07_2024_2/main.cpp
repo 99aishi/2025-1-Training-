@@ -19,6 +19,8 @@ int main(int argc, char** argv) {
     restaurante.cargar_comandas();
     restaurante.actualizar_comandas();
     restaurante.imprimir_comandas();
+    //LA HERENCIA ESTA MAL APLICADA, NO GUIARSE 
+    
     return 0;
 }
 

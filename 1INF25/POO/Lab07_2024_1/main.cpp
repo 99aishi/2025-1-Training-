@@ -18,6 +18,7 @@ int main(int argc, char** argv) {
     Biblioteca biblioteca;
     biblioteca.cargar_libros();
     biblioteca.cargar_estantes();
+    biblioteca.posicionar_libros();
     return 0;
 }
 

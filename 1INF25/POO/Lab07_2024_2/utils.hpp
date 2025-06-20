@@ -17,6 +17,7 @@
 #include <fstream>
 #include <iomanip>
 #include <cstring>
+#include <stdlib.h>
 
 using namespace std;
 

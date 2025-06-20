@@ -36,4 +36,12 @@ void Enciclopedia::SetPeso(double peso) {
 double Enciclopedia::GetPeso() const {
     return peso;
 }
+void Enciclopedia::Leer(ifstream &input){
+    Libro::Leer(input);
+    char c;
+    int vol;
+    double peso;
+    input >>vol>>c>>peso;
+    input.get();
+}
 

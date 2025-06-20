@@ -29,4 +29,11 @@ void EstanteHorizontal::SetCantidad_novelas(int cantidad_novelas) {
 int EstanteHorizontal::GetCantidad_novelas() const {
     return cantidad_novelas;
 }
+int EstanteHorizontal::espacio_ocupado(){
+    int ocupado=0;
+    for (int i = 0; i < cantidad_novelas; i++) {
+        ocupado+=novelas[i].GetAncho();
+    }
+    return ocupado;
 
+}

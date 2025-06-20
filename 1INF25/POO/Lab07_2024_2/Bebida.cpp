@@ -32,3 +32,12 @@ void Bebida::GetTamano(char *tamano) const {
     if(this->tamano==nullptr) tamano[0]=0;
     strcpy(tamano,this->tamano);
 }
+
+void Bebida::Leer(ifstream &input){
+    Producto::Leer(input);
+    char _tam[20];
+    input.getline(_tam, 20, '\n');
+    SetTamano(_tam);
+    
+    
+}

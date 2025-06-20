@@ -24,6 +24,7 @@ public:
     virtual ~EstanteHorizontal();
     void SetCantidad_novelas(int cantidad_novelas);
     int GetCantidad_novelas() const;
+    int espacio_ocupado();
 private:
     Novela novelas[12];
     int cantidad_novelas;

@@ -23,6 +23,8 @@ public:
     virtual ~Bebida();
     void SetTamano(const char* tamano);
     void GetTamano(char*) const;
+    
+    void Leer(ifstream &);
 private:
     char *tamano;
 };

@@ -25,6 +25,8 @@ public:
     int GetVolumen() const;
     void SetPeso(double peso);
     double GetPeso() const;
+    
+    void Leer(ifstream &);
 private:
     int volumen;
     double peso;

@@ -38,14 +38,17 @@ public:
     void cargar_estantes();
     void leer_esta_horizontal(ifstream &input);
     void leer_esta_vertical(ifstream &input);
+    
+    
+    void posicionar_libros();
 private:
     EstanteVertical estantesVerticales[5];
     int cantidad_estantes_verticales;
     EstanteHorizontal estantesHorizontales[5];
     int cantidad_estantes_horizontales;
-    Enciclopedia enciclopedias[20];
+    Enciclopedia enciclopedias[20]{};
     int cantidad_total_enciclopedias;
-    Novela novelas[20];
+    Novela novelas[20]{};
     int cantidad_total_novelas;
     
 };

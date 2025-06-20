@@ -22,8 +22,8 @@ Libro::Libro(const Libro& orig) {
 }
 
 Libro::~Libro() {
-//    delete this->nombre;
-//     delete this->codigo;
+    delete this->nombre;
+     delete this->codigo;
 }
 //void Libro::operator =(const Libro &otro){
 //    

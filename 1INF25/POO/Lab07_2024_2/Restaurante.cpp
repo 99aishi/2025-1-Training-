@@ -28,7 +28,6 @@ void Restaurante::cargar_comandas(){
     char c;
     input >> id_comanda;
     while(true){
-        
         id_comanda=comandas[cantidad_comandas].Leer(input,id_comanda);
         if(input.eof()) break;
         cantidad_comandas++;
@@ -61,4 +60,16 @@ void Restaurante::actualizar_comandas(){
         if(pos!= -1)
             comandas[pos].actualizar_comandas(input);
     }
+    ordenar();
 }
+void Restaurante::ordenar(){
+    qsort(comandas,cantidad_comandas,sizeof(class Comanda),compara_cod);
+}
+
+int compara_cod(const void* com1,const void *com2){
+    Comanda *comA=(Comanda*)com1;
+    Comanda *comB=(Comanda*)com2;
+    
+    return - comA->GetId() + comB->GetId();
+}
+

@@ -34,6 +34,7 @@ public:
     void GetCodigo(char* codigo) const;
     
     void Leer(ifstream &input);
+    
 private:
     char *codigo;
     int anchura;

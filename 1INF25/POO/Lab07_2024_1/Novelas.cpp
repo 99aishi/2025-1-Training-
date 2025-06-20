@@ -20,7 +20,6 @@ Novela::Novelas(const Novela& orig) {
 }
 
 Novela::~Novela() {
-//    delete this->tipo;
 }
 
 void Novela::SetTipo(const char* tipo) {

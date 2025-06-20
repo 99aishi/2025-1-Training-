@@ -22,7 +22,7 @@ public:
     Novelas(const Novela& orig);
     virtual ~Novela();
     void SetTipo(const char* tipo);
-    void GetTipo(char*tipo) const;
+    void GetTipo(char* tipo) const;
     void SetPeso(double peso);
     double GetPeso() const;
 private:

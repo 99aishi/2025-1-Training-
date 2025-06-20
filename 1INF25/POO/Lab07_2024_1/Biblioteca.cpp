@@ -13,10 +13,10 @@
 #include "Biblioteca.hpp"
 
 Biblioteca::Biblioteca() {
-    cantidad_estantes_horizontales=0;
-    cantidad_estantes_verticales=0;
-    cantidad_total_enciclopedias=0;
-    cantidad_total_novelas=0;
+    cantidad_estantes_horizontales = 0;
+    cantidad_estantes_verticales = 0;
+    cantidad_total_enciclopedias = 0;
+    cantidad_total_novelas = 0;
 }
 
 Biblioteca::Biblioteca(const Biblioteca& orig) {
@@ -56,63 +56,70 @@ void Biblioteca::SetCantidad_estantes_verticales(int cantidad_estantes_verticale
 int Biblioteca::GetCantidad_estantes_verticales() const {
     return cantidad_estantes_verticales;
 }
-void Biblioteca::leer_enciclopedia(ifstream &input){
+
+void Biblioteca::leer_enciclopedia(ifstream &input) {
     enciclopedias[cantidad_total_enciclopedias].Leer(input);
-    char c;
-    int vol;
-    double peso;
-    input >>vol>>c>>peso;
-    input.get();
-    enciclopedias[cantidad_total_enciclopedias].SetPeso(peso);
-    enciclopedias[cantidad_total_enciclopedias].SetVolumen(vol);
     cantidad_total_enciclopedias++;
 }
-void Biblioteca::leer_novela(ifstream &input){
-    
-    Novela novel;
-    novel.Leer(input);
-//    novelas[cantidad_total_novelas].Leer(input);
+
+void Biblioteca::leer_novela(ifstream &input) {
+
+    novelas[cantidad_total_novelas].Leer(input);
     char tipo[20];
-    input.getline(tipo,20,',');
-//    novelas[cantidad_total_novelas].SetTipo(tipo);
-//    novel.SetTipo(tipo);
+    input.getline(tipo, 20, ',');
+    novelas[cantidad_total_novelas].SetTipo(tipo);
     double peso;
     input>>peso;
     input.get();
-//    novelas[cantidad_total_novelas].SetPeso(peso);
-    novel.SetPeso(peso);
-    novelas[cantidad_total_novelas]=novel;
+    novelas[cantidad_total_novelas].SetPeso(peso);
     cantidad_total_novelas++;
 }
-void Biblioteca::cargar_libros(){
-    ifstream csv("libros2.csv",ios::in);
-    char tipo,c;
-    while(true){
-        csv >>tipo>>c;
-        if(csv.eof()) break;
-        if(tipo=='E')
+
+void Biblioteca::cargar_libros() {
+    ifstream csv("libros2.csv", ios::in);
+    char tipo, c;
+    while (true) {
+        csv >> tipo>>c;
+        if (csv.eof()) break;
+        if (tipo == 'E')
             leer_enciclopedia(csv);
-        if(tipo=='N')
+        if (tipo == 'N')
             leer_novela(csv);
     }
 }
-void Biblioteca::leer_esta_horizontal(ifstream &input){
+
+void Biblioteca::leer_esta_horizontal(ifstream &input) {
     estantesHorizontales[cantidad_estantes_horizontales].Leer(input);
     cantidad_estantes_horizontales++;
 }
-void Biblioteca::leer_esta_vertical(ifstream &input){
+
+void Biblioteca::leer_esta_vertical(ifstream &input) {
     estantesVerticales[cantidad_estantes_verticales].Leer(input);
     cantidad_estantes_verticales++;
 }
-void Biblioteca::cargar_estantes(){
-    ifstream csv("estantes2.csv",ios::in);
-    char tipo,c;
-    while(true){
-        csv>>tipo>>c;
-        if(csv.eof()) break;
-        if(tipo=='H')
+
+void Biblioteca::cargar_estantes() {
+    ifstream csv("estantes2.csv", ios::in);
+    char tipo, c;
+    while (true) {
+        csv >> tipo>>c;
+        if (csv.eof()) break;
+        if (tipo == 'H')
             leer_esta_horizontal(csv);
-        if(tipo=='V')
+        if (tipo == 'V')
             leer_esta_vertical(csv);
     }
+}
+
+void Biblioteca::posicionar_libros() {
+    //    posicionar_estante_horizontal();
+
+    //    for(int i=0; i<cantidad_total_novelas;i++){
+    //        for (int k = 0; k < cantidad_estantes_horizontales; k++) {
+    //            
+    //        }   
+    //    }
+
+
+
 }
